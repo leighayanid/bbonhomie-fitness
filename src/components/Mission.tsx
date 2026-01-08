@@ -98,7 +98,7 @@ export default function Mission() {
         <div ref={titleRef} className="text-center mb-20">
           <span className="text-gold font-bold tracking-[0.5em] text-sm uppercase mb-4 block">Our Philosophy</span>
           <h2 className="text-6xl md:text-8xl font-bebas text-white mb-8">
-            THE IRON <span className="text-transparent text-stroke">CODE</span>
+            THE FITNESS <span className="text-transparent text-stroke">JOURNEY</span>
           </h2>
         </div>
 
