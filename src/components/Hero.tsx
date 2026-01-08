@@ -99,7 +99,7 @@ export default function Hero() {
             </div>
             <div className="overflow-hidden">
               <span className="hero-text-line block text-gold text-glow">
-                FORGED FOR THE ELITE.
+                OUTWORK YOUR EXCUSES.
               </span>
             </div>
           </h1>

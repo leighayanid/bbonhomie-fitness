@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
-import { Instagram, Twitter, Facebook, Youtube, Video } from "lucide-react";
+import { Instagram, Twitter, Youtube, Video } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,10 +29,10 @@ export default function Footer() {
 
   return (
     <footer ref={footerRef} className="bg-obsidian border-t border-white/5 py-16 relative overflow-hidden">
-        {/* Footer Watermark */}
-        <div className="absolute -bottom-20 -right-20 pointer-events-none opacity-[0.02] select-none">
-            <span className="text-[15rem] font-bebas text-white leading-none">BB</span>
-        </div>
+      {/* Footer Watermark */}
+      <div className="absolute -bottom-20 -right-20 pointer-events-none opacity-[0.02] select-none">
+        <span className="text-[15rem] font-bebas text-white leading-none">BB</span>
+      </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
@@ -58,21 +58,21 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bebas text-xl mb-6 text-gold tracking-widest">Connect</h4>
             <div className="flex flex-wrap gap-6 mb-8">
-                <a href="#" className="text-gray-400 hover:text-gold transition-colors hover:scale-110 transform duration-300">
-                    <Instagram className="w-6 h-6" />
-                </a>
-                 <a href="#" className="text-gray-400 hover:text-gold transition-colors hover:scale-110 transform duration-300">
-                    <Youtube className="w-6 h-6" />
-                </a>
-                 <a href="#" className="text-gray-400 hover:text-gold transition-colors hover:scale-110 transform duration-300">
-                    <Video className="w-6 h-6" /> {/* Using Video for TikTok placeholder */}
-                </a>
-                 <a href="#" className="text-gray-400 hover:text-gold transition-colors hover:scale-110 transform duration-300">
-                    <Twitter className="w-6 h-6" />
-                </a>
+              <a href="#" className="text-gray-400 hover:text-gold transition-colors hover:scale-110 transform duration-300">
+                <Instagram className="w-6 h-6" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-gold transition-colors hover:scale-110 transform duration-300">
+                <Youtube className="w-6 h-6" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-gold transition-colors hover:scale-110 transform duration-300">
+                <Video className="w-6 h-6" /> {/* Using Video for TikTok placeholder */}
+              </a>
+              <a href="#" className="text-gray-400 hover:text-gold transition-colors hover:scale-110 transform duration-300">
+                <Twitter className="w-6 h-6" />
+              </a>
             </div>
-             <p className="text-xs text-zinc-600 font-medium">
-                &copy; {new Date().getFullYear()} BBonhomie Fitness. <br /> All rights reserved.
+            <p className="text-xs text-zinc-600 font-medium">
+              &copy; {new Date().getFullYear()} BBonhomie Fitness. <br /> All rights reserved.
             </p>
           </div>
         </div>

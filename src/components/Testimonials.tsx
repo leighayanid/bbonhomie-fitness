@@ -68,7 +68,7 @@ export default function Testimonials() {
           <h2 className="text-5xl md:text-7xl font-bebas text-white mb-4">
             SUCCESS <span className="text-transparent text-stroke">STORIES</span>
           </h2>
-          <p className="text-gray-400">Don't just take our word for it.</p>
+          <p className="text-gray-400">Don&apos;t just take our word for it.</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -86,7 +86,7 @@ export default function Testimonials() {
               </div>
 
               <p className="text-gray-300 italic mb-8 leading-relaxed relative z-10">
-                "{t.quote}"
+                {t.quote}
               </p>
 
               <div className="border-t border-white/5 pt-6">

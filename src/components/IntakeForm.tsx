@@ -82,7 +82,7 @@ export default function IntakeForm() {
           </div>
           <h2 className="text-5xl font-bebas text-white mb-4">MESSAGE SENT</h2>
           <p className="text-gray-400 text-lg">
-            Thanks for reaching out! We'll review your details and get back to you within 48 hours.
+            Thanks for reaching out! We&apos;ll review your details and get back to you within 48 hours.
           </p>
         </div>
       </section>
@@ -100,7 +100,7 @@ export default function IntakeForm() {
             GET IN <span className="text-gold text-glow">TOUCH</span>
           </h2>
           <p className="text-gray-400">
-            Tell us a little about yourself and your goals so we can see if we're a good fit.
+            Tell us a little about yourself and your goals so we can see if we&apos;re a good fit.
           </p>
         </div>
 

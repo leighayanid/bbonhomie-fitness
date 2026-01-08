@@ -1,15 +1,32 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
   const sectionRef = useRef(null);
   const imageRef = useRef(null);
+  const [current, setCurrent] = useState(0);
+  const coachImages = [
+    "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=2787&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1534367610401-9f51b1fdf7c1?q=80&w=2787&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1571907480495-9413f8a5a2b9?q=80&w=2787&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1517963623534-290b8f0f9695?q=80&w=2787&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?q=80&w=2787&auto=format&fit=crop",
+  ];
+  const prevSlide = () => setCurrent((c) => (c - 1 + coachImages.length) % coachImages.length);
+  const nextSlide = () => setCurrent((c) => (c + 1) % coachImages.length);
+  useEffect(() => {
+    const id = setInterval(() => {
+      setCurrent((c) => (c + 1) % coachImages.length);
+    }, 5000);
+    return () => clearInterval(id);
+  }, [coachImages.length]);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -38,18 +55,43 @@ export default function About() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div className="relative aspect-[4/5] overflow-hidden bg-zinc-900 border border-white/5 group">
-            {/* Placeholder for Champion Image */}
+          <div ref={imageRef} className="relative aspect-[4/5] overflow-hidden bg-zinc-900 border border-white/5 group">
             <div className="absolute inset-0 border border-gold/30 scale-[0.95] z-20 pointer-events-none transition-transform duration-700 group-hover:scale-100" />
-            <Image
-              ref={imageRef}
-              src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=2787&auto=format&fit=crop"
-              alt="Champion Physique"
-              fill
-              className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
-              sizes="(max-width: 768px) 100vw, 50vw"
-              unoptimized
-            />
+            {coachImages.map((src, idx) => (
+              <Image
+                key={idx}
+                src={src}
+                alt="Coach"
+                fill
+                className={`absolute inset-0 object-cover transition-opacity duration-700 ${current === idx ? "opacity-100 grayscale group-hover:grayscale-0" : "opacity-0"}`}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                unoptimized
+              />
+            ))}
+            <div className="absolute bottom-4 left-0 right-0 z-30 flex items-center justify-between px-4">
+              <button
+                onClick={prevSlide}
+                className="inline-flex items-center justify-center w-10 h-10 bg-black/40 text-white border border-white/20 hover:border-gold/40 hover:text-gold transition-colors"
+                aria-label="Previous"
+              >
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+              <div className="flex items-center gap-2">
+                {coachImages.map((_, idx) => (
+                  <span
+                    key={idx}
+                    className={`h-2 w-2 rounded-full border border-white/20 ${current === idx ? "bg-gold border-gold/40" : "bg-white/10"}`}
+                  />
+                ))}
+              </div>
+              <button
+                onClick={nextSlide}
+                className="inline-flex items-center justify-center w-10 h-10 bg-black/40 text-white border border-white/20 hover:border-gold/40 hover:text-gold transition-colors"
+                aria-label="Next"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </button>
+            </div>
           </div>
 
           <div className="space-y-8">
@@ -66,18 +108,19 @@ export default function About() {
 
             <div className="space-y-6 text-gray-400 text-lg leading-relaxed font-light">
               <p>
-                BBonhomie Fitness is about feeling good and moving better. Founded by an experienced coach,
-                we're here to help you succeed on your fitness journey.
+                Beau Bonhomie is a fitness instructor and coach with over 10 years in the industry.
+                He has won several bodybuilding contests and is passionate about helping people build
+                strong, healthy habits that last.
               </p>
               <p>
-                We combine expert knowledge with a supportive environment to help you thrive.
-                You bring the effort, we provide the guidance.
+                Using proven training and nutrition methods, Beau creates programs tailored to your goals
+                and lifestyle—simple, supportive, and effective. You bring the effort; we provide the guidance.
               </p>
             </div>
 
             <div className="grid grid-cols-2 gap-8 pt-8 border-t border-white/10">
               <div>
-                <span className="block text-5xl font-bebas text-gold text-glow">15+</span>
+                <span className="block text-5xl font-bebas text-gold text-glow">10+</span>
                 <span className="text-sm uppercase tracking-widest text-gray-500 mt-1 block">Years Experience</span>
               </div>
               <div>
