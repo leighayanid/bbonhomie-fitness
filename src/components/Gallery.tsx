@@ -76,9 +76,9 @@ export default function Gallery() {
       <div className="container mx-auto px-4">
         <div ref={titleRef} className="text-center mb-16">
           <h2 className="text-5xl md:text-7xl font-bebas text-white mb-4">
-            THE WALL OF <span className="text-transparent text-stroke">GAINS</span>
+            CLIENT <span className="text-transparent text-stroke">TRANSFORMATIONS</span>
           </h2>
-          <p className="text-gray-400">Real people. Real work. Real results.</p>
+          <p className="text-gray-400">See what our clients have achieved.</p>
         </div>
 
         <div ref={gridRef} className="grid md:grid-cols-3 gap-8">

@@ -60,9 +60,9 @@ export default function Header() {
 
 
   const menuLinks = [
-    { name: "The Pedigree", href: "#the-pedigree" },
-    { name: "The Blueprint", href: "#the-blueprint" },
-    { name: "The Wall", href: "#the-wall" },
+    { name: "About", href: "#the-pedigree" },
+    { name: "Services", href: "#the-blueprint" },
+    { name: "Transformations", href: "#the-wall" },
     { name: "Contact", href: "#contact" },
   ];
 

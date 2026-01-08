@@ -29,7 +29,7 @@ export default function StickyCTA() {
         href="#contact"
         className="block w-full bg-gold text-obsidian font-bebas text-2xl py-4 text-center shadow-lg hover:bg-white transition-colors shadow-gold/20"
       >
-        JOIN THE BROTHERHOOD
+        START YOUR JOURNEY
       </Link>
     </div>
   );

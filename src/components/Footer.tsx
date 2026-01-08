@@ -41,17 +41,17 @@ export default function Footer() {
               BBONHOMIE FITNESS
             </Link>
             <p className="text-gray-400 max-w-sm leading-relaxed font-light">
-              Forged in iron, built on discipline. The standard for elite physique transformation and coaching.
+              Helping you achieve your health and fitness goals. We provide expert coaching and support to help you succeed.
             </p>
           </div>
 
           <div>
-            <h4 className="text-white font-bebas text-xl mb-6 text-gold tracking-widest">The Iron Creed</h4>
+            <h4 className="text-white font-bebas text-xl mb-6 text-gold tracking-widest">Our Values</h4>
             <ul className="space-y-3 text-sm text-gray-400">
-              <li className="hover:text-white transition-colors cursor-default">Unyielding Discipline</li>
-              <li className="hover:text-white transition-colors cursor-default">The Brotherhood of Iron</li>
-              <li className="hover:text-white transition-colors cursor-default">Championship Standards</li>
-              <li className="hover:text-white transition-colors cursor-default">Radical Transparency</li>
+              <li className="hover:text-white transition-colors cursor-default">Consistency</li>
+              <li className="hover:text-white transition-colors cursor-default">Community</li>
+              <li className="hover:text-white transition-colors cursor-default">Excellence</li>
+              <li className="hover:text-white transition-colors cursor-default">Honesty</li>
             </ul>
           </div>
 

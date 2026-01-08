@@ -54,30 +54,28 @@ export default function About() {
 
           <div className="space-y-8">
             <h2 className="text-5xl md:text-7xl font-bebas text-white leading-none">
-              THE PEDIGREE <br /> <span className="text-transparent text-stroke">OF POWER</span>
+              MEET YOUR <br /> <span className="text-transparent text-stroke">COACH</span>
             </h2>
 
             <div className="space-y-6 text-gray-400 text-lg leading-relaxed font-light">
               <p>
-                BBonhomie Fitness isn&apos;t just about lifting weights; it&apos;s about
-                the brotherhood of iron. Founded by a champion who has stood on
-                the world&apos;s most prestigious stages and walked away with the
-                gold, we provide the blueprint for absolute physical dominance.
+                BBonhomie Fitness is about feeling good and moving better. Founded by an experienced coach, 
+                we're here to help you succeed on your fitness journey.
               </p>
               <p>
-                We combine the science of hypertrophy with the grit of a
-                competitor&apos;s mindset. You provide the work; we provide the win.
+                We combine expert knowledge with a supportive environment to help you thrive. 
+                You bring the effort, we provide the guidance.
               </p>
             </div>
 
             <div className="grid grid-cols-2 gap-8 pt-8 border-t border-white/10">
                 <div>
                     <span className="block text-5xl font-bebas text-gold text-glow">15+</span>
-                    <span className="text-sm uppercase tracking-widest text-gray-500 mt-1 block">Title Wins</span>
+                    <span className="text-sm uppercase tracking-widest text-gray-500 mt-1 block">Years Experience</span>
                 </div>
                 <div>
                     <span className="block text-5xl font-bebas text-gold text-glow">500+</span>
-                    <span className="text-sm uppercase tracking-widest text-gray-500 mt-1 block">Lives Changed</span>
+                    <span className="text-sm uppercase tracking-widest text-gray-500 mt-1 block">People Helped</span>
                 </div>
             </div>
           </div>

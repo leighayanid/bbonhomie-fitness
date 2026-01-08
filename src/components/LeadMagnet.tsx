@@ -37,24 +37,24 @@ export default function LeadMagnet() {
           
           <div className="space-y-6 text-obsidian">
             <h2 className="text-5xl md:text-7xl font-bebas leading-[0.9]">
-              STEAL THE <br /> CHAMPION'S <span className="text-white text-stroke-black">BLUEPRINT</span>
+              GET YOUR FREE <br /> <span className="text-white text-stroke-black">WORKOUT PLAN</span>
             </h2>
             <p className="text-lg font-medium max-w-md">
-              Not ready to commit to full coaching? Start with our free <strong>7-Day "Shock Phase" Protocol</strong>. Add inches to your arms and density to your back with this high-intensity sample block.
+              Start your fitness journey with our free <strong>7-Day Guide</strong>. Simple, effective exercises you can do to build strength.
             </p>
             
             <ul className="space-y-3 font-semibold">
               <li className="flex items-center gap-2">
                 <div className="bg-obsidian text-gold p-1 rounded-full"><Check size={14} /></div>
-                <span>Exact Set/Rep Schemes</span>
+                <span>Easy-to-follow routines</span>
               </li>
               <li className="flex items-center gap-2">
                 <div className="bg-obsidian text-gold p-1 rounded-full"><Check size={14} /></div>
-                <span>Intensity Technique Demos</span>
+                <span>Video demonstrations</span>
               </li>
               <li className="flex items-center gap-2">
                 <div className="bg-obsidian text-gold p-1 rounded-full"><Check size={14} /></div>
-                <span>Pre-Workout Nutrition Guide</span>
+                <span>Nutrition tips</span>
               </li>
             </ul>
           </div>
@@ -64,8 +64,8 @@ export default function LeadMagnet() {
                 FREE DOWNLOAD
              </div>
 
-             <h3 className="text-white font-bebas text-3xl mb-2">GET ACCESS NOW</h3>
-             <p className="text-gray-400 text-sm mb-6">Zero spam. Pure gains. Unsubscribe anytime.</p>
+             <h3 className="text-white font-bebas text-3xl mb-2">DOWNLOAD NOW</h3>
+             <p className="text-gray-400 text-sm mb-6">No spam. Just helpful tips. Unsubscribe anytime.</p>
 
              <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
                 <div>

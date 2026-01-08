@@ -10,18 +10,18 @@ gsap.registerPlugin(ScrollTrigger);
 
 const values = [
   {
-    title: "DISCIPLINE OVER MOTIVATION",
-    description: "Motivation is a feeling. Discipline is a command. We do the work especially when we don't feel like it.",
+    title: "CONSISTENCY IS KEY",
+    description: "We help you build healthy habits that last. It's not about being perfect, it's about showing up.",
     icon: Shield,
   },
   {
-    title: "PRECISION OVER GUESSWORK",
-    description: "We don't hope for results; we engineer them. Data-driven protocols for calculated hypertrophy.",
+    title: "SMART TRAINING",
+    description: "We use proven methods to help you reach your goals safely and effectively. No guessing, just results.",
     icon: Target,
   },
   {
-    title: "RESULTS OVER EXCUSES",
-    description: "The iron never lies. 200lbs is always 200lbs. You either moved it, or you didn't. No grey areas.",
+    title: "REAL RESULTS",
+    description: "We celebrate your progress, big or small. We're here to support you every step of the way.",
     icon: Flame,
   },
 ];

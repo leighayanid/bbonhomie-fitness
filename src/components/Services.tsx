@@ -10,33 +10,33 @@ gsap.registerPlugin(ScrollTrigger);
 
 const services = [
   {
-    title: "Contest Prep",
+    title: "Competition Prep",
     price: "$299/mo",
-    description: "STAGE READY. NO COMPROMISE. I don’t just get you lean; I get you peeled.",
+    description: "Expert guidance for your competition preparation. We'll help you look your best on stage.",
     icon: Trophy,
     features: ["Weekly Check-ins", "Peak Week Protocol", "Posing Guidance"],
     link: "#", // Placeholder Stripe Link
   },
   {
-    title: "Hypertrophy Blueprint",
+    title: "Build Muscle",
     price: "$199/mo",
-    description: "MAXIMUM GROWTH PROTOCOLS. Every set and rep is engineered for forced growth.",
+    description: "Structured workouts to help you build strength and muscle effectively.",
     icon: Dumbbell,
     features: ["Custom Training Split", "Progressive Overload", "Form Analysis"],
     link: "#",
   },
   {
-    title: "Performance Nutrition",
+    title: "Nutrition Coaching",
     price: "$149/mo",
-    description: "FUEL THE MACHINE. Precise nutrition that evolves with your progress.",
+    description: "Simple, sustainable nutrition plans tailored to you and your lifestyle.",
     icon: Zap,
     features: ["Macro/Meal Plans", "Supplement Stack", "Metabolic Adaptation"],
     link: "#",
   },
   {
-    title: "Executive Coaching",
+    title: "Personalized Coaching",
     price: "Custom",
-    description: "TOTAL PHYSIQUE MANAGEMENT. High-level accountability for those who demand professional-grade results.",
+    description: "Comprehensive support for your busy lifestyle. We handle the details so you can focus on results.",
     icon: Briefcase,
     features: ["Daily Communication", "Travel Protocols", "Lifestyle Optimization"],
     link: "#",
